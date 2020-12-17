@@ -1,0 +1,12 @@
+PS C:\Users\DELL\source\repos\BulkyBook\YelpCamp> nodemon app
+nodemon : File C:\Users\DELL\AppData\Roaming\npm\nodemon.ps1 cannot be loaded because running scripts is disabled on
+information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ nodemon app
++ ~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+https://stackoverflow.com/questions/63423584/how-to-fix-error-nodemon-ps1-cannot-be-loaded-because-running-scripts-is-disabl
+
+Çözüm : Set-ExecutionPolicy RemoteSigned -Scope CurrentUser yaz entera bas
